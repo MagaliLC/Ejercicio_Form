@@ -13,4 +13,7 @@
     <string name="error">Hay algún elemento vacío</string>
     <string name="ok">creado correctamente</string>
     <string name="empty">Este campo no puede quedar vacío</string>
+    <string name="deleteAll">¿Quieres borrar todos los campos?</string>
+    <string name="yes">SÍ</string>
+    <string name="no">NO</string>
 </resources>

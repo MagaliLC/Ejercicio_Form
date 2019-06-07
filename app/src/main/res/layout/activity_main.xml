@@ -174,7 +174,7 @@
                         android:background="@color/red"
                         android:text="@string/delete"
                         android:textColor="@color/white"
-                        android:onClick="deleteForm"
+                        android:onClick="openDialog"
                         />
 
                 </LinearLayout>

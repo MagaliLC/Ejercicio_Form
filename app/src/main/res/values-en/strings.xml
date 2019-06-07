@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Form_Exercise</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="tel">Phone number</string>
+    <string name="password">Password</string>
+    <string name="hintName">Write your name</string>
+    <string name="hintEmail">Write your email</string>
+    <string name="hintTel">Write your phone number</string>
+    <string name="hintPassword">Write your password</string>
+    <string name="save">SAVE</string>
+    <string name="delete">DELETE</string>
+    <string name="error">Hay algún elemento vacío</string>
+    <string name="ok">OK</string>
+    <string name="empty">This field cannot be blank</string>
+    <string name="deleteAll">¿Would you like to delete everything?</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+</resources>
