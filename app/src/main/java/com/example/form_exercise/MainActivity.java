@@ -32,29 +32,23 @@ public class MainActivity extends AppCompatActivity {
 
     public void checkForm(View view) {
         String n = etName.getText().toString();
-        if ((etName.getText().toString().trim().equalsIgnoreCase("")) || (etEmail.getText().toString().trim().equalsIgnoreCase("")) || (etPass.getText().toString().trim().equalsIgnoreCase("")) || (etTel.getText().toString().trim().equalsIgnoreCase(""))){
+       /* if ((etName.getText().toString().trim().equalsIgnoreCase("")) || (etEmail.getText().toString().trim().equalsIgnoreCase("")) || (etPass.getText().toString().trim().equalsIgnoreCase("")) || (etTel.getText().toString().trim().equalsIgnoreCase(""))){
             Toast.makeText(this, R.string.error, Toast.LENGTH_LONG).show();
         } else {
             Toast.makeText(this,n + " " + getString(R.string.ok), Toast.LENGTH_LONG).show();
         }
+*/
 
+        if (etName.getText().toString().trim().equalsIgnoreCase("")) {
+            etName.setError(getString(R.string.empty));
+        } else if (etEmail.getText().toString().trim().equalsIgnoreCase("")) {
+            etEmail.setError(getString(R.string.empty));
+        } else if (etPass.getText().toString().trim().equalsIgnoreCase("")) {
+            etPass.setError(getString(R.string.empty));
+        } else if (etTel.getText().toString().trim().equalsIgnoreCase("")) {
+            etPass.setError(getString(R.string.empty));
+        } else {
+            Toast.makeText(this, getString(R.string.ok), Toast.LENGTH_LONG).show();
+        }
     }
-
-
 }
-
-
-   /* String n = etName.getText().toString();
-        if(checkSelect.isChecked()){
-                tv.setText(getString(R.string.hello)+" "+n+" "+getString(R.string.welcome)+" "+getString(R.string.checked));
-                }else{
-                tv.setText(getString(R.string.hello)+" "+n+" "+getString(R.string.welcome)+" "+getString(R.string.unchecked));
-
-                }
-
-                }
-
-public void clearMessage(View view){
-        tv.setText("");
-        etName.setText("");
-        }*/

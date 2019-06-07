@@ -12,4 +12,5 @@
     <string name="delete">BORRAR</string>
     <string name="error">Hay algún elemento vacío</string>
     <string name="ok">creado correctamente</string>
+    <string name="empty">Este campo no puede quedar vacío</string>
 </resources>
