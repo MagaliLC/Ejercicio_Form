@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Form_Exercise</string>
+    <string name="name">Nombre</string>
+    <string name="email">Email</string>
+    <string name="tel">Teléfono</string>
+    <string name="password">Contraseña</string>
+    <string name="hintName">Escribe el nombre</string>
+    <string name="hintEmail">Escribe el email</string>
+    <string name="hintTel">Escribe el teléfono</string>
+    <string name="hintPassword">Escribe la contraseña</string>
+    <string name="save">GUARDAR</string>
+    <string name="delete">BORRAR</string>
+    <string name="error">Hay algún elemento vacío</string>
+    <string name="ok">creado correctamente</string>
+</resources>
