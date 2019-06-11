@@ -17,4 +17,6 @@
     <string name="deleteAll">¿Would you like to delete everything?</string>
     <string name="yes">YES</string>
     <string name="no">NO</string>
+    <string name="birthdate">Birthdate</string>
+    <string name="hintDate">Write your birthdate</string>
 </resources>

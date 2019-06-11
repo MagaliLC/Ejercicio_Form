@@ -1,18 +1,27 @@
 package com.example.form_exercise;
 
+import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.DatePickerDialog;
 import android.content.DialogInterface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
     EditText etName;
     EditText etEmail;
     EditText etTel;
     EditText etPass;
+    EditText etDate;
+
+    int pDay, pMonth, pYear=0;
+    Activity activity=this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         etEmail = findViewById(R.id.email);
         etTel = findViewById(R.id.tel);
         etPass = findViewById(R.id.pass);
+        etDate = findViewById(R.id.birthdate);
     }
 
 
@@ -82,4 +92,40 @@ public class MainActivity extends AppCompatActivity {
 
         alertDialog.show();
     }
+
+
+    public void chooseDate(View view) {
+        DatePickerDialog dateDialog = new DatePickerDialog(activity, pDateSetListener, pYear, pMonth, pDay);
+
+        dateDialog.getDatePicker().setMinDate(System.currentTimeMillis());
+           Calendar calendar = Calendar.getInstance();
+           calendar.set(2019,5,22);
+        dateDialog.getDatePicker().setMaxDate(calendar.getTimeInMillis());
+        dateDialog.show();
+    }
+
+    private DatePickerDialog.OnDateSetListener pDateSetListener =
+
+            new DatePickerDialog.OnDateSetListener() {
+
+        @Override
+                public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+
+                    pYear = year;
+
+                    pMonth = monthOfYear;
+
+                    pDay = dayOfMonth;
+
+                    String fromDay = Integer.toString(pDay);
+
+                    String fromMonth = Integer.toString(pMonth + 1);
+
+                    if (fromDay.length() == 1) fromDay = "0" + fromDay;
+
+                    if (fromMonth.length() == 1) fromMonth = "0" + fromMonth;
+
+                    etDate.setText(fromDay + "/" + fromMonth + "/" + pYear);
+                }
+            };
 }

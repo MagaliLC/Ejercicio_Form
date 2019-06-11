@@ -16,4 +16,6 @@
     <string name="deleteAll">¿Quieres borrar todos los campos?</string>
     <string name="yes">SÍ</string>
     <string name="no">NO</string>
+    <string name="birthdate">Fecha de nacimiento</string>
+    <string name="hintDate">Escribe la fecha de nacimiento</string>
 </resources>
